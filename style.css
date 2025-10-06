@@ -1,0 +1,79 @@
+@import 'tailwindcss';
+
+/* Custom fonts */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Fira+Code:wght@400;500&display=swap');
+
+/* Global slide styling - use daisyUI theme colors */
+.slidev-layout {
+  @apply font-sans bg-base-100;
+}
+
+/* Darker, higher contrast text for large audiences - use theme colors */
+h1 {
+  @apply text-6xl font-bold mb-8 text-base-content leading-tight;
+}
+
+h2 {
+  @apply text-4xl font-semibold mb-6 text-base-content;
+}
+
+h3 {
+  @apply text-3xl font-semibold mb-4 text-base-content;
+}
+
+p {
+  @apply text-2xl leading-relaxed text-base-content mb-4;
+}
+
+ul, ol {
+  @apply text-2xl text-base-content space-y-3;
+}
+
+li {
+  @apply leading-relaxed;
+}
+
+code {
+  @apply font-mono text-lg bg-base-200 px-3 py-1 rounded text-primary border border-primary/30;
+}
+
+/* Chart containers */
+.chart-container {
+  @apply w-full h-full flex items-center justify-center;
+}
+
+.chart-svg {
+  @apply w-full h-full;
+}
+
+/* Custom slide backgrounds - use theme colors */
+.slide-dark {
+  @apply bg-neutral text-neutral-content;
+}
+
+.slide-light {
+  @apply bg-base-100 text-base-content;
+}
+
+.slide-accent {
+  @apply bg-primary text-primary-content;
+}
+
+/* Emphasis elements - use theme colors */
+.highlight {
+  @apply bg-warning/30 px-3 py-1 rounded font-semibold text-warning-content;
+}
+
+.callout {
+  @apply border-l-8 border-info bg-info/10 p-6 my-6 rounded-r shadow-sm;
+  @apply text-xl text-base-content;
+}
+
+/* Strong emphasis for stats/metrics */
+.metric {
+  @apply text-6xl font-bold text-primary mb-2;
+}
+
+.metric-label {
+  @apply text-2xl font-medium text-base-content/70;
+}
